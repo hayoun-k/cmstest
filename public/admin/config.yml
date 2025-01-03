@@ -1,14 +1,17 @@
 backend:
-  name: git
+  name: github
   branch: main
   repo: hayoun-k/cmstest
   auth_type: implicit
+  + base_url: https://hayoun-k.github.io/cmstest/
+
+media_folder: "src/assets/images" # Location where files will be stored in the repo
+public_folder: "src/assets/images" # The src attribute for uploaded media
+
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
     folder: "src/content/blog" # The path to the folder where the documents are stored
-    media_folder: "src/assets/images" # Location where files will be stored in the repo
-    public_folder: "src/assets/images" # The src attribute for uploaded media
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in frontmatter
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
