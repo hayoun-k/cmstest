@@ -3,8 +3,8 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://hayoun-k.github.io/',
+  site: 'https://hayoun-k.github.io/cmstest',
   //base: 'cmstest',
-  srcDir: '.src',
+  srcDir: './src',
   publicDir: './public'
 });
