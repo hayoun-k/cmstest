@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import logo from '../assets/logo_temp.svg';
+---
+
+<header>
+  <div class="logo-container">
+    <Image src={logo} alt="logo" id="logo" width="50" height="50" />
+  </div>
+  <ul class="navbar">
+    <li><a href="#" class="nav-item"></a>Home</li>
+    <li><a href="#" class="nav-item"></a>About</li>
+    <li><a href="#" class="nav-item"></a>Blog</li>
+    <li><a href="#" class="nav-item"></a>Contact</li>
+  </ul>
+</header>
+
+<style>
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar {
+    display: flex;
+    gap: 0.5rem;
+  }
+</style>
