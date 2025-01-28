@@ -1,25 +1,30 @@
 ---
 import { getCollection } from "astro:content";
+import BlogPost from "./BlogPost.astro";
+import type { CollectionEntry } from 'astro:content';
 
-const posts = await getCollection("posts");
+const posts = await getCollection("blog");
+//console.log(posts);
 ---
 
 <main>
 	<h1>Hello</h1>
-	<p>Welcome to my blog</p>
+	<pre>{posts.length}</pre>
+	<p>Welcome to my blogg</p>
 	<section>
 		<ul class="featured-list">
 			{ posts.length === 0 && <p>Coming Soon...</p>}
 			{ posts.length !== 0 &&
 				posts.map((post) => (
 					<li>
-						<a href="">
-							<img src={post.data.heroImage} alt="">
-							<h4 class="title">{post.data.title}</h4>
+						<BlogPost url={`/blog/${post.id}`} title={post.data.title}>
+							{/* <img src={post.data.heroImage} alt=""> */}
+							{/* <h4 class="title">{post.data.title}</h4> */}
 							<p class="date">
-								
+								{post.data.publishedAt}
 							</p>
-						</a>
+							<span>help</span>
+						</BlogPost>
 					</li>
 				))
 			}

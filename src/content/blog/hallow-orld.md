@@ -1,8 +1,8 @@
 ---
-layout: blog
-title: Hallow orld
-date: 2025-01-03T00:00:00.000Z
-thumbnail: src/assets/images/maplestory_ewevcud6f3.png
-rating: 0
+title: "Hallow orld"
+publishedAt: 2025-01-01
+author: Me
+description: "sample post"
+isPublish: true
 ---
 # Happy New Year of Blue Snake!
