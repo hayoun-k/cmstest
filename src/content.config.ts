@@ -10,6 +10,7 @@ const blog = defineCollection({
     description: z.string(),
     isPublish: z.boolean(),
     isDraft: z.boolean().default(false),
+    author: z.string(),
   }),
 });
 
