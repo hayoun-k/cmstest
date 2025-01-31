@@ -2,8 +2,8 @@ backend:
   name: github
   branch: main
   repo: hayoun-k/cmstest
-  auth_type: implicit
-  base_url: https://cmstest-dnh.pages.dev/
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
 media_folder: "src/assets/images" # Location where files will be stored in the repo
 public_folder: "src/assets/images" # The src attribute for uploaded media
