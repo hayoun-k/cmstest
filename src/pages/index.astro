@@ -3,6 +3,8 @@ import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import FeaturedRecipe from '../components/FeaturedRecipe.astro';
+import FeaturedBlog from '../components/FeaturedBlog.astro';
 
 import { getCollection } from "astro:content";
 const posts = await getCollection("blog");
@@ -14,6 +16,10 @@ console.log(posts);
 
 <Layout>
 	<Header />
-	<Welcome />
+	<main>
+		<Welcome />
+		<FeaturedRecipe />
+		<FeaturedBlog />
+	</main>
 	<Footer />
 </Layout>

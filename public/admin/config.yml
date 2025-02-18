@@ -17,8 +17,14 @@ collections:
     fields: # The fields for each document, usually in frontmatter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "publishedAt", widget: "datetime" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
+      # - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Description", name: "description", widget: "string"}
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Difficulty", name: "difficulty", widget: "select", options: ["Easy", "Medium", "Hard"] }
+      - { label: "Cooking Time", name: "cooking_time", widget: "string" }
+      - { label: "Ingredients", name: "ingredients", widget: "list", field: { label: "Ingredient", name: "ingredient", widget: "string" } }
+      - { label: "Instructions", name: "instructions", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "image" }

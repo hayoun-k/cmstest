@@ -1,0 +1,63 @@
+---
+
+---
+<section>
+  <div class="bento-grid">
+    <ul class="featured-list">
+      <li class="featured-item"><a href="#"><img src="https://placehold.co/400x400" alt="placeholder image"></a></li>
+      <li class="featured-item"><a href="#"><img src="https://placehold.co/400x400" alt="placeholder image"></a></li>
+      <li class="featured-item"><a href="#"><img src="https://placehold.co/400x400" alt="placeholder image"></a></li>
+      <li class="featured-item"><a href="#"><img src="https://placehold.co/400x400" alt="placeholder image"></a></li>
+      <li class="featured-item"><a href="#"><img src="https://placehold.co/400x400" alt="placeholder image"></a></li>
+      <li class="featured-item"><a href="#"><img src="https://placehold.co/400x400" alt="placeholder image"></a></li>
+    </ul>
+  </div>
+</section>
+
+<style>
+  .featured-list {
+    margin: auto;
+    padding-block: 60px;
+    max-width: 1000px;
+    aspect-ratio: 1 / 1;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a b b"
+    "a c d"
+    "e e f";
+    gap: 40px;
+  }
+
+  .featured-item {
+    background-color: rgba(225,225,225,0.6);
+    border-radius: 50px;
+    overflow: hidden;
+  }
+
+  .featured-item:nth-child(1) {
+    grid-area: a;
+  }
+
+  .featured-item:nth-child(2) {
+    grid-area: b;
+  }
+
+  .featured-item:nth-child(3) {
+    grid-area: c;
+  }
+
+  .featured-item:nth-child(4) {
+    grid-area: d;
+  }
+
+  .featured-item:nth-child(5) {
+    grid-area: e;
+  }
+
+  .featured-item:nth-child(6) {
+    grid-area: f;
+  }
+
+</style>
+
