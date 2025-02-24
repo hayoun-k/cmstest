@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import logo from '../assets/logo_temp.svg';
+import { Icon } from 'astro-icon/components'
 ---
 
 <header>
@@ -10,13 +11,15 @@ import logo from '../assets/logo_temp.svg';
   <ul class="navbar">
     <li><a href="#" class="nav-item">Home</a></li>
     <li><a href="#" class="nav-item">About</a></li>
+    <li><a href="/recipe" class="nav-item">Recipe</a></li>
     <li><a href="/blog" class="nav-item">Blog</a></li>
-    <li><a href="#" class="nav-item">Contact</a></li>
+    <li class="icon"><a href="#"></a><Icon name="fa6-brands:instagram" width="16" height="16" /></li>
   </ul>
 </header>
 
 <style>
   header {
+    padding: 32px 80px;
     display: flex;
     justify-content: space-between;
   }
@@ -24,5 +27,15 @@ import logo from '../assets/logo_temp.svg';
   .navbar {
     display: flex;
     gap: 0.5rem;
+    align-items: center;
+  }
+
+  .navbar li {
+    padding: 0.5em;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
   }
 </style>

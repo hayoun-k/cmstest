@@ -22,6 +22,16 @@ collections:
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Description", name: "description", widget: "string"}
+  - name: "recipe"
+    label: "Recipe"
+    folder: "src/content/recipe"
+    create: true
+    fields:
+      - { label: "Publish Date", name: "publishedAt", widget: "datetime" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Description", name: "description", widget: "string"}
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Difficulty", name: "difficulty", widget: "select", options: ["Easy", "Medium", "Hard"] }
       - { label: "Cooking Time", name: "cooking_time", widget: "string" }

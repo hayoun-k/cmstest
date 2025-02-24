@@ -9,6 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource/kalam": "^5.1.1",
+    "@fontsource/pacifico": "^5.1.1",
+    "@fontsource/poppins": "^5.1.1",
     "astro": "^5.1.10",
     "astro-icon": "^1.1.5",
     "decap-cms-app": "^3.4.0"

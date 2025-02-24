@@ -8,7 +8,7 @@ import FeaturedBlog from '../components/FeaturedBlog.astro';
 
 import { getCollection } from "astro:content";
 const posts = await getCollection("blog");
-console.log(posts);
+// console.log(posts);
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -17,9 +17,50 @@ console.log(posts);
 <Layout>
 	<Header />
 	<main>
+		<section class="hero">
+			<div class="text-container">
+				<h1>Easy Korean Recipes</h1>
+				<p>Perfect for your home meal</p>
+				<a href="#" class="button">Browse Recipes</a>
+			</div>
+		</section>
 		<Welcome />
 		<FeaturedRecipe />
 		<FeaturedBlog />
 	</main>
 	<Footer />
 </Layout>
+
+<style>
+	.hero {
+		min-height: 800px;
+		padding: 80px;
+		background-color: #718355;
+		display: flex;
+		align-items: center;
+	}
+
+	.hero > * {
+		max-width: 1320px;
+		margin: auto;
+	}
+
+	h1 {
+		margin-bottom: 1em;
+		font-family: 'Pacifico', cursive;
+		font-size: 3rem;
+		line-height: 2;
+		text-align: center;
+	}
+
+	h1 + p {
+		margin-bottom: 1em;
+		font-size: 1.5rem;
+		line-height: 2;
+		text-align: center;
+	}
+
+	.button {
+		justify-self: center;
+	}
+</style>

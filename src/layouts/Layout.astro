@@ -1,4 +1,8 @@
 ---
+import '@fontsource/pacifico';
+import '@fontsource/kalam';
+import '@fontsource/poppins';
+
 const {title} = Astro.props;
 ---
 
@@ -32,9 +36,15 @@ const {title} = Astro.props;
 	}
 
 	body {
-		max-width: 1320px;
 		margin: auto;
-		padding-block: 5%;
+	}
+
+	h2,h3 .subheading {
+		font-family: 'Poppins', sans-serif;
+	}
+
+	p,a,span,li {
+		font-family: 'Kalam';
 	}
 
 	a {
@@ -44,5 +54,14 @@ const {title} = Astro.props;
 
 	li {
 		list-style-type: none;
+	}
+
+	.button {
+		width: fit-content;
+		padding: 0.3em;
+		background-color: white;
+		border-radius: 10px;
+		font-size: 1.33rem;
+		display: flex;
 	}
 </style>
